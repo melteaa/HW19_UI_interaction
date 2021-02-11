@@ -28,6 +28,12 @@ body{
     margin-right: 15px;/*puts space between the items */
     color: #024890; /*color of the words*/
 }
+
+.nav_item:hover{
+  text-decoration: underline;
+  text-decoration-color: #024890;
+  font-weight: bold;
+}
 .nav_item_big {
     font-family: 'Alegreya Sans', sans-serif;/*type of font*/
     font-size: 14px;/*size of font*/
@@ -38,6 +44,7 @@ body{
     text-decoration-color: #DD5334;/*this entire section should have an underline running under the whole nav bar*/
     color:#DD5334; /*color of the words*/
 }
+
 
 .header {
     font-family: 'Playfair Display', serif;
@@ -104,15 +111,16 @@ main{
 .overlay{
     border-radius: 10px;
     /* padding: 20px; */
-    width: 100%;
     background: rgba(129, 163, 192, 0.75);
-    text-align: left;
     background-size: cover;
-    height: 100%;
+    height: max-content;
+
 
 }
 
-* {box-sizing:border-box}
+.box_top{
+  height: 484px;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -121,8 +129,10 @@ main{
     background-size: cover;
     background-position-x: 300px;
     background-repeat: no-repeat;
+    height: 450px;
     margin-top: 10px;
     margin-bottom: 5px;
+    position:relative;
 
 }
 
@@ -134,14 +144,11 @@ main{
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
-  position: absolute;
-  top: 50%;
   width: auto;
-  margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: #FFFDF0;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 24px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -155,7 +162,7 @@ main{
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(242,148,121,0.8);
 }
 
 /* Caption text */
@@ -184,14 +191,23 @@ main{
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #FFFDF0;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #F29479;
+}
+
+.arrows{
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
 }
 
 /* Fading animation */
@@ -212,17 +228,40 @@ main{
   to {opacity: 1}
 }
 
-.featured_work{
+.Slide1{
     background-image: url("../img/dnd_sheet_BW.png");
     background-color:#80A3C0;
     border-radius: 10px;
     background-size: cover;
-    background-position-x: 300px;
     background-repeat: no-repeat;
     margin-top: 10px;
     margin-bottom: 5px;
 
 }
+
+.Slide2{
+  background-image: url("../img/ferst_readers_BW.png");
+  background-color:#80A3C0;
+  border-radius: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  margin-bottom: 5px;
+
+}
+
+.Slide3{
+  background-image: url("../img/illustration_BW.png");
+  background-color:#80A3C0;
+  border-radius: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  margin-bottom: 5px;
+
+}
+
+
 .featured_work_box{
 
     height: 450px;
@@ -238,9 +277,20 @@ main{
 }
 
 .text_container{
+  display: flex;
+  flex-direction: column;
+  height: 375px;
+  width: 350px;
+  padding-top: 25px;
+  padding-left: 15px;
+  margin-left: 25px;
+
+}
+
+.text_containerSP{
     display: flex;
     flex-direction: column;
-    height: 350px;
+    height: 325px;
     width: 350px;
     padding-top: 25px;
     padding-left: 15px;
@@ -276,6 +326,14 @@ main{
     font-size: 16px;
     color: #FFFDF0;
     border-radius: 16px;
+    transition: 0.6s ease;
+}
+
+.button:hover{
+
+  color: #024890;
+  background-color: #FFFDF0;
+  font-weight: bold;
 }
 
 .button_row{
