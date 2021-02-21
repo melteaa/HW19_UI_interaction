@@ -113,7 +113,27 @@ main{
     /* padding: 20px; */
     background: rgba(129, 163, 192, 0.75);
     background-size: cover;
-    height: max-content;
+    height: 484px;
+
+
+}
+
+.overlay_slideshow{
+  border-radius: 10px;
+  /* padding: 20px; */
+  background: rgba(129, 163, 192, 0.75);
+  background-size: cover;
+  height: 450px;
+
+
+}
+
+.overlay_sneak{
+  border-radius: 10px;
+  /* padding: 20px; */
+  background: rgba(129, 163, 192, 0.75);
+  background-size: cover;
+  height: 350px;
 
 
 }
@@ -192,6 +212,7 @@ main{
   width: 15px;
   margin: 0 2px;
   background-color: #FFFDF0;
+
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
